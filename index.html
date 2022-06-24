@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form-validation</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <form>
+            <div class="">
+                <input type="email" id="mail" placeholder=" " required>
+                <label for="mail">E-mail</label>
+            </div>
+
+            <div class="">
+                <input type="text" id="country" placeholder=" " required pattern="[a-zA-z ]+">
+                <label for="country">Country</label>
+            </div>
+
+            <div class="">
+                <input type="text" id="zip-code" placeholder=" " required pattern="[0-9]{5}(-[0-9]{4})?" title="Example: 12345 or 12345-1234">
+                <label for="zip-code">Zip-code</label>
+            </div>
+
+            <div class="">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+
+            <div class="">
+                <input type="password" id="confirm-password" placeholder=" " required>
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+
+            <button type="button">Submit</button>
+        </form>
+        <div class="message">
+            <p>Congratulations!</p>
+        </div>
+    </body>
+</html>
